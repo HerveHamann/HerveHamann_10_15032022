@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Aboutaccordion from "./components/Aboutaccordion";
+import Accordion from "./components/Accordion";
+import Rating from "./components/Rating";
+import Tag from "./components/Tag";
+import Thumb from "./components/Thumb";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Tag />
+      <Thumb />
+      <Accordion />
+      <Aboutaccordion />
+      <Rating />
     </div>
   );
-}
+};
 
 export default App;
