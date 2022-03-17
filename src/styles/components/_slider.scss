@@ -1,0 +1,30 @@
+.container {
+  position: absolute;
+
+  .slider {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+  }
+  .arrowleft {
+    position: absolute;
+    top: 156px;
+    left: 23px;
+  }
+  .arrowright {
+    position: absolute;
+    top: 156px;
+    right: 23px;
+  }
+  .slidenumber {
+    position: absolute;
+    top: 357px;
+    left: 607px;
+    font-size: 18px;
+    font-weight: $font-weight-2;
+    color: $color-4;
+  }
+  .hide {
+    display: none;
+  }
+}
