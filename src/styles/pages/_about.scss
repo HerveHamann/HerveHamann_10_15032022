@@ -1,0 +1,10 @@
+.aboutcontainer {
+  .aboutbanner {
+    margin: 0 100px 0 100px;
+    height: 223px;
+    border-radius: 25px;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../../assets/img/aboutbanner.jpg);
+  }
+}

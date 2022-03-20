@@ -1,0 +1,32 @@
+.homecontainer {
+  margin: 0 100px 0 100px;
+  .homebanner {
+    margin-top: 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 223px;
+    border-radius: 25px;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../../assets/img/headerbanner.jpg);
+
+    h2 {
+      color: $color-3;
+      font-weight: $font-weight-2;
+      font-size: 48px;
+    }
+  }
+  .thumbcontainer {
+    border-radius: 25px;
+    margin: 43px 0 43px 0;
+    padding: 56px 0 56px 0;
+
+    background-color: $color-4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 4.8%;
+  }
+}

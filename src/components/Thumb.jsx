@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const Thumb = () => {
-    return (
- 
- <div className="thumb">
-     <h2>Titre de la location</h2>
- </div>
-    );
+const Thumb = ({ cover, title }) => {
+  return (
+    <div className="thumb">
+      <img src={cover} alt="lodging" />
+      <h2>{title}</h2>
+    </div>
+  );
 };
 
 export default Thumb;

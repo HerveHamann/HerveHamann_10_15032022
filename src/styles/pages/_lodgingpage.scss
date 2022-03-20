@@ -1,0 +1,54 @@
+.maincontainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 7% 0 7%;
+
+  .maininfo {
+    h1 {
+      color: $color-1;
+      font-size: 36px;
+      font-weight: $font-weight-2;
+      margin-bottom: 10px;
+    }
+    p {
+      color: $color-1;
+      font-size: 18px;
+      font-weight: $font-weight-2;
+    }
+    .tagcontainer {
+      display: flex;
+      margin-top: 20px;
+      gap: 10px;
+    }
+  }
+  .secondaryinfo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .hostinfo {
+      display: flex;
+      width: 180px;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      color: $color-1;
+      font-size: 18px;
+      font-weight: $font-weight-2;
+      text-align: right;
+    }
+    .profile {
+      width: 70px;
+      border-radius: 50%;
+    }
+  }
+}
+.detailedinfo {
+  margin: 24px 100px 0 100px;
+  display: flex;
+  justify-content: center;
+  gap: 5.3%;
+}

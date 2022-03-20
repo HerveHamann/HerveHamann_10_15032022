@@ -1,6 +1,7 @@
 .aboutaccordion {
-  width: 1023px;
-  .title {
+  margin: 33px 14.5% 33px 14.5%;
+
+  .abouttitle {
     background-color: $color-1;
     height: 52px;
     display: flex;
@@ -10,12 +11,13 @@
     padding: 0 12px 0 20px;
 
     p {
+      line-height: 1.5;
       font-size: 24px;
       color: $color-3;
       font-weight: $font-weight-2;
     }
   }
-  .container {
+  .aboutcontainer {
     background-color: $color-4;
     border-radius: 5px;
     position: relative;
