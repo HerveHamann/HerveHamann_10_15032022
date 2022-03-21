@@ -1,6 +1,10 @@
 .thumb {
   width: 340px;
   height: 340px;
+  @include mobile() {
+    width: 335px;
+    height: 255px;
+  }
   position: relative;
 
   img {
@@ -17,6 +21,6 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: 70%;
+    width: 75%;
   }
 }

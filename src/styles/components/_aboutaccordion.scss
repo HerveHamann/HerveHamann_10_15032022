@@ -1,20 +1,35 @@
 .aboutaccordion {
   margin: 33px 14.5% 33px 14.5%;
+  @include mobile() {
+    margin: 19px 7% 0 7%;
+  }
 
   .abouttitle {
     background-color: $color-1;
+    padding: 0 20px 0 12px;
     height: 52px;
     display: flex;
     align-items: center;
     border-radius: 5px;
     justify-content: space-between;
     padding: 0 12px 0 20px;
+    cursor: pointer;
+    @include mobile() {
+      height: 30px;
+      padding: 0 11px 0 12px;
+    }
 
     p {
       line-height: 1.5;
       font-size: 24px;
       color: $color-3;
       font-weight: $font-weight-2;
+      @include mobile() {
+        font-size: 13px;
+      }
+    }
+    .arrowdownup {
+      width: 15px;
     }
   }
   .aboutcontainer {
@@ -28,6 +43,10 @@
       padding: 40px 12px 27px 20px;
       color: $color-1;
       font-size: 24px;
+      @include mobile() {
+        font-size: 12px;
+        padding: 23px 12px 13px 20px;
+      }
     }
   }
   .container-closed {

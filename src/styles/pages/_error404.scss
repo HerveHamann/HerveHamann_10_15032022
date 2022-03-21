@@ -8,11 +8,26 @@
     padding-top: 175px;
     font-size: 288px;
     font-weight: $font-weight-3;
+    @include tablet() {
+      font-size: 96px;
+      padding-top: 200px;
+    }
   }
   h2 {
-    padding-top: 100px;
+    padding: 100px 20px 0 20px;
     font-size: 36px;
     font-weight: $font-weight-2;
+    @include tablet() {
+      font-size: 18px;
+      padding-top: 0px;
+      text-align: center;
+    }
+    .behide {
+      display: none;
+      @include tablet() {
+        display: block;
+      }
+    }
   }
   p {
     padding: 182px 0 159px 0;
@@ -20,5 +35,10 @@
     font-size: 18px;
     font-weight: $font-weight-2;
     text-decoration: underline;
+
+    @include tablet() {
+      padding: 133px 0 159px 0;
+      font-size: 14px;
+    }
   }
 }

@@ -3,7 +3,7 @@ import arrowdown from "../assets/img/arrowdown.svg";
 import arrowup from "../assets/img/arrowup.svg";
 
 const Accordion = ({ header, description, equipments }) => {
-  const [opened, setOpened] = useState(true);
+  const [opened, setOpened] = useState(false);
   // console.log({ description });
 
   let content = header === "Description" ? description : equipments;
@@ -12,7 +12,7 @@ const Accordion = ({ header, description, equipments }) => {
     <div className="accordion">
       <div className="title" onClick={() => (opened ? setOpened(false) : setOpened(true))}>
         <p>{header}</p>
-        <img src={opened ? arrowdown : arrowup} alt="arrow" />
+        <img src={opened ? arrowdown : arrowup} alt="arrow" className="arrowupdown" />
       </div>
       <div className={opened ? "container" : "container-closed"}>
         {description

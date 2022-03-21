@@ -14,5 +14,8 @@
     font-size: 24px;
     font-weight: $font-weight-2;
     margin-top: 32px;
+    @include mobile() {
+      font-size: 12px;
+    }
   }
 }

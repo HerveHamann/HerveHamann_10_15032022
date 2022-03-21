@@ -19,3 +19,19 @@ $color-4: #f6f6f6;
 body {
   font-family: $font-1;
 }
+
+@mixin desktop {
+  @media screen and (min-width: 1441px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 769px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 425px) {
+    @content;
+  }
+}
