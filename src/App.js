@@ -24,7 +24,6 @@ const App = () => {
       setData(res);
     });
   }, []);
-  console.log(data);
 
   return (
     <BrowserRouter>
