@@ -4,10 +4,9 @@ import arrowup from "../assets/img/arrowup.svg";
 
 const Accordion = ({ header, description, equipments }) => {
   const [opened, setOpened] = useState(false);
-  // console.log({ description });
 
   let content = header === "Description" ? description : equipments;
-  console.log(content);
+
   return (
     <div className="accordion">
       <div className="title" onClick={() => (opened ? setOpened(false) : setOpened(true))}>

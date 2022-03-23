@@ -10,13 +10,12 @@ import Error404 from "./Error404";
 
 const Lodgingpage = ({ data }) => {
   const { id } = useParams();
-  console.log(id);
+
   const item = data.find((item) => item.id === id);
   if (!item) {
     return <Error404 />;
   } else {
     const { description, equipments, host, location, pictures, rating, tags, title } = item;
-    console.log(item);
 
     return (
       <div className="lodgingpage">

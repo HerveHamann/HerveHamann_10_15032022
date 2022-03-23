@@ -4,7 +4,7 @@ import aboutarrowup from "../assets/img/aboutarrowup.svg";
 
 const Aboutaccordion = ({ header, text }) => {
   const [opened, setOpened] = useState(false);
-  console.log({ text });
+
   return (
     <div className="aboutaccordion">
       <div className="abouttitle" onClick={() => (opened ? setOpened(false) : setOpened(true))}>
