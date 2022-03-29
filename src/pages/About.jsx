@@ -1,5 +1,5 @@
 import React from "react";
-import Aboutaccordion from "../components/Aboutaccordion";
+import Accordion from "../components/Accordion";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 
@@ -11,19 +11,19 @@ const About = () => {
         <div className="aboutbanner"></div>
       </div>
       <div className="aboutinfo">
-        <Aboutaccordion
+        <Accordion
           header="Fiabilité"
           text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
         />
-        <Aboutaccordion
+        <Accordion
           header="Respect"
           text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
         />
-        <Aboutaccordion
+        <Accordion
           header="Service"
           text="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
         />
-        <Aboutaccordion
+        <Accordion
           header="Sécurité"
           text="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
         />
